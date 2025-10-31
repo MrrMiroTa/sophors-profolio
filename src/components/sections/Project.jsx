@@ -19,7 +19,7 @@ function Project() {
               Implemented product listing, shopping cart, and checkout system.
             </p>
             <div>
-              {["HTML", "CSS", "JavaScript", "PHP", "MySQL"].map(
+              {["HTML", "CSS", "JavaScript", "React.js"].map(
                 (index, key) => (
                   <span
                     key={key}
@@ -34,7 +34,7 @@ function Project() {
             </div>
             <div className="flex justify-between items-center">
               <a
-                href=""
+                href="https://e-commerceshop-fakestoreapi.vercel.app/"
                 target="_blank"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
