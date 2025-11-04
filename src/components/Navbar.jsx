@@ -27,21 +27,28 @@ function Navbar( {menuOpen, setMenuOpen}) {
             </a>
             <a
               href="#about"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {""}
               About {""}
             </a>
             <a
+              href="#cv"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              {""}
+              CV {""}
+            </a>
+            <a
               href="#project"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {""}
               Project {""}
             </a>
             <a
               href="#contact"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {""}
               Contact {""}

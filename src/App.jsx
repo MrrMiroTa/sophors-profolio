@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
+import CV from "./components/sections/CV";
 import Project from "./components/sections/Project";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
@@ -25,6 +26,7 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home/>
         <About/>
+        <CV/>
         <Project/>
         <Contact/>
         <Footer/>

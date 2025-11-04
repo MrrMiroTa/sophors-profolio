@@ -29,17 +29,26 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 
-            ${menuOpen ? "opacity-100 translate-y0" : "opacity-0 translate-y-5"}
+        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
             `}
       >
         About
       </a>
       <a
+        href="#cv"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+            `}
+      >
+        CV
+      </a>
+      <a
         href="#project"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 
-            ${menuOpen ? "opacity-100 translate-y0" : "opacity-0 translate-y-5"}
+        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
             `}
       >
         Project
