@@ -3,7 +3,7 @@ import card from "../../assets/idcard.jpg";
 
 function Home() {
   return (
-    <section className="sm:mt-30">
+    <section>
       <RevealOnScroll>
       <div
         id="home"
