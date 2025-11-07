@@ -3,25 +3,17 @@ import React, { useEffect } from "react";
 function MobileMenu({ menuOpen, setMenuOpen }) {
   return (
     <div
-      className={`fixed top-0 left-0 w-full bg-[rgbe(10,10,10,0.8)] z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
+      className={`fixed top-4 ml-10 left-1/2 transform -translate-x-1/2  z-40 flex flex-row items-center justify-center space-x-4 px-4 py-2 rounded-md transition-all duration-300 ease-in-out ${
         menuOpen
-          ? "h-screen opacity-100 pointer-events-auto"
-          : "h-0 opacity-0 pointer-events-none"
+          ? "opacity-100 translate-y-0 pointer-events-auto"
+          : "opacity-0 translate-y-5 pointer-events-none"
       }`}
     >
-      <button
-        onClick={() => setMenuOpen(false)}
-        className="absolute top-4 right-7 text-white text-3xl focus:outline-none cursor-pointer "
-        aria-label="Close Menu"
-      >
-        &times;
-      </button>
-
       <a
         href="#home"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 
-            ${menuOpen ? "opacity-100 translate-y0" : "opacity-0 translate-y-5"}
+        className={`text-sm font-semibold text-white transition-all duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
             `}
       >
         Home
@@ -29,8 +21,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
-            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+        className={`text-sm font-semibold text-white transition-all duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
             `}
       >
         About
@@ -38,8 +30,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       <a
         href="#cv"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
-            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+        className={`text-sm font-semibold text-white transition-all duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
             `}
       >
         CV
@@ -47,8 +39,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       <a
         href="#project"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
-            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+        className={`text-sm font-semibold text-white transition-all duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
             `}
       >
         Project
@@ -56,8 +48,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 
-            ${menuOpen ? "opacity-100 translate-y0" : "opacity-0 translate-y-5"}
+        className={`text-sm font-semibold text-white transition-all duration-300
+            ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
             `}
       >
         Contact

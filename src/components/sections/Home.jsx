@@ -35,7 +35,7 @@ function Home() {
             <img
               src={card}
               alt="Doeun Sophors"
-              className="w-89 h-79 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105"
+              className="sm:w-80 sm:h-80 w-89 h-79 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105"
             />
           </div>
         </div>

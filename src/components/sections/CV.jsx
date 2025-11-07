@@ -30,7 +30,7 @@ function CV() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="glass rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Frontend Skills</h3>
               <div className="flex flex-wrap gap-2">
@@ -59,9 +59,9 @@ function CV() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="glass rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">📒 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -87,14 +87,14 @@ function CV() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="glass rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all mt-8">
+          {/* <div className="glass rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all mt-8">
             <h3 className="text-xl font-bold mb-4">Projects</h3>
             <p className="text-gray-300">
               Check out my projects section for detailed examples of my work, including web applications and more.
             </p>
-          </div>
+          </div> */}
         </div>
       </RevealOnScroll>
     </section>
