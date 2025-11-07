@@ -18,7 +18,7 @@ function Project() {
               <p className="text-gray-400 mb-4">
                 Implemented product listing, shopping cart, and checkout system.
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {["HTML", "CSS", "JavaScript", "React.js"].map((index, key) => (
                   <span
                     key={key}
@@ -28,7 +28,6 @@ function Project() {
                     {index}
                   </span>
                 ))}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a
@@ -48,7 +47,7 @@ function Project() {
                 Designed ordering, product list and billing features for a
                 mini-restaurant.{" "}
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {["HTML", "CSS", "JavaScript", "PHP", "MySQL"].map(
                   (index, key) => (
                     <span
@@ -60,7 +59,6 @@ function Project() {
                     </span>
                   )
                 )}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a
@@ -78,7 +76,7 @@ function Project() {
                 Developed a news website with real-time updates and fetch API
                 integration(BBC).
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {["HTML", "CSS", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -90,7 +88,6 @@ function Project() {
                     </span>
                   )
                 )}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a
@@ -107,7 +104,7 @@ function Project() {
               <p className="text-gray-400 mb-4">
                 Developed a calculator app with real-time updates .
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -119,7 +116,6 @@ function Project() {
                     </span>
                   )
                 )}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a
@@ -136,7 +132,7 @@ function Project() {
               <p className="text-gray-400 mb-4">
                 Developed a to do list app with real-time updates.
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -148,7 +144,6 @@ function Project() {
                     </span>
                   )
                 )}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a
@@ -167,7 +162,7 @@ function Project() {
               <p className="text-gray-400 mb-4">
                 Developed a full-fledged e-commerce store with a custom API.
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {[
                   "HTML",
                   "Tailwindcss",
@@ -183,7 +178,6 @@ function Project() {
                     {index}
                   </span>
                 ))}
-                ;
               </div>
               <div className="flex justify-between items-center">
                 <a

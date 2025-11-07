@@ -9,6 +9,7 @@ import CV from "./components/sections/CV";
 import Project from "./components/sections/Project";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import Header from "./components/sections/Header";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <div className="md:hidden">
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         </div>
+        {/* <Header/> */}
         <Home/>
         <About/>
         <CV/>
