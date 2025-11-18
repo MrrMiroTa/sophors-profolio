@@ -73,7 +73,7 @@ function About() {
                 </li>
                 <li>
                   <strong>
-                    Secondary school of fine art Graduated High School Diploma
+                    Secondary school Steung Sen Graduated High School Diploma
                     (2015-2021)
                   </strong>
                 </li>

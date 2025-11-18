@@ -15,10 +15,10 @@ function Project() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl ffont-bold mb-2">E-Commerce Website</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Implemented product listing, shopping cart, and checkout system.
               </p>
-              <div>
+              <div className="text-wrap">
                 {["HTML", "CSS", "JavaScript", "React.js"].map((index, key) => (
                   <span
                     key={key}
@@ -44,11 +44,11 @@ function Project() {
               <h3 className="text-xl ffont-bold mb-2">
                 Point Of Sale (Mini-restaurant)
               </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Designed ordering, product list and billing features for a
                 mini-restaurant.{" "}
               </p>
-              <div>
+              <div className="text-wrap">
                 {["HTML", "CSS", "JavaScript", "PHP", "MySQL"].map(
                   (index, key) => (
                     <span
@@ -74,11 +74,11 @@ function Project() {
             </div>
             <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl ffont-bold mb-2">News Website</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Developed a news website with real-time updates and fetch API
                 integration(BBC).
               </p>
-              <div>
+              <div className="text-wrap "> 
                 {["HTML", "CSS", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -104,10 +104,10 @@ function Project() {
             </div>
             <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl ffont-bold mb-2">Calculator App</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Developed a calculator app with real-time updates .
               </p>
-              <div>
+              <div className="text-wrap ">
                 {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -133,10 +133,10 @@ function Project() {
             </div>
             <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl ffont-bold mb-2">To Do List</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Developed a to do list app with real-time updates.
               </p>
-              <div>
+              <div className="text-wrap ">
                 {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
                   (index, key) => (
                     <span
@@ -164,20 +164,22 @@ function Project() {
               <h3 className="text-xl ffont-bold mb-2">
                 E-Commerce Store (Own API)
               </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 break-words">
                 Developed a full-fledged e-commerce store with a custom API.
               </p>
-              <div>
+              <div className="sm:text-wrap ">
                 {[
                   "HTML",
                   "Tailwindcss",
                   "JavaScript",
                   "React.js",
                   "Laravel",
+                  "MySQL",
+                  "MySQL",
                 ].map((index, key) => (
                   <span
                     key={key}
-                    className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                    className=" flex text-wrap xl:grid sm:grid-cols-6 bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                         hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
                   >
                     {index}
