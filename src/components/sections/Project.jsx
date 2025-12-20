@@ -175,7 +175,6 @@ function Project() {
                   "React.js",
                   "Laravel",
                   "MySQL",
-                  "MySQL",
                 ].map((index, key) => (
                   <span
                     key={key}
@@ -190,6 +189,40 @@ function Project() {
               <div className="flex justify-between items-center">
                 <a
                   href="https://e-commerceshop-three.vercel.app/"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View project →
+                </a>
+              </div>
+            </div>
+            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
+              <h3 className="text-xl ffont-bold mb-2">
+                Restaurant Website
+              </h3>
+              <p className="text-gray-400 mb-4 break-words">
+                Created a responsive restaurant website with menu and booking.
+              </p>
+              <div className="sm:text-wrap ">
+                {[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "Vue.js",
+                ].map((index, key) => (
+                  <span
+                    key={key}
+                    className=" flex text-wrap xl:grid sm:grid-cols-6 bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
+                  >
+                    {index}
+                  </span>
+                ))}
+                ;
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://friends-meets.vercel.app/"
                   target="_blank"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
