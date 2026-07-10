@@ -1,5 +1,5 @@
 import RevealOnScroll from "../RevealOnScroll";
-import card from "../../assets/idcard.jpg";
+import card from "../../assets/phors.jpg";
 
 function Home() {
   return (

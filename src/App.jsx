@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LoadingPage from "./components/LoadingPage";
-import "./App.css";
+
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Home from "./components/sections/Home";
