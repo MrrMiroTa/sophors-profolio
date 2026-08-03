@@ -58,6 +58,14 @@ function Project() {
       link: "https://friends-meets.vercel.app/",
       gradient: "from-primary-500 to-accent-500",
     },
+     {
+      title: "Daily Payment Tracker",
+      description:
+        "Created a responsive daily payment tracker for not your payment",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP","MySQL"],
+      link: "https://dailypayment.gamer.gd/?i=1",
+      gradient: "from-primary-500 to-accent-500",
+    },
   ];
 
   return (
