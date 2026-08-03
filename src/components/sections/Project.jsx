@@ -1,235 +1,126 @@
-import React from "react";
 import RevealOnScroll from "../RevealOnScroll";
 
 function Project() {
+  const projects = [
+    {
+      title: "E-Commerce Website",
+      description:
+        "Implemented product listing, shopping cart, and checkout system with modern UI.",
+      technologies: ["HTML", "CSS", "JavaScript", "React.js"],
+      link: "https://e-commerceshop-fakestoreapi.vercel.app/",
+      gradient: "from-primary-500 to-accent-500",
+    },
+    {
+      title: "Point Of Sale (Mini-restaurant)",
+      description:
+        "Designed ordering, product list and billing features for a mini-restaurant.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      link: "https://github.com/MrrMiroTa/system_restaurant",
+      gradient: "from-accent-500 to-primary-500",
+    },
+    {
+      title: "News Website",
+      description:
+        "Developed a news website with real-time updates and BBC API integration.",
+      technologies: ["HTML", "CSS", "Tailwindcss", "JavaScript", "React.js"],
+      link: "https://news-by-uzita.vercel.app/",
+      gradient: "from-primary-500 to-accent-500",
+    },
+    {
+      title: "Calculator App",
+      description:
+        "Built a simple calculator app with a user-friendly interface and real-time calculations.",
+      technologies: ["HTML", "Tailwindcss", "JavaScript", "React.js"],
+      link: "https://calculator-app-uzita.vercel.app/",
+      gradient: "from-accent-500 to-primary-500",
+    },
+    {
+      title: "To Do List",
+      description:
+        "Developed a to do list app with real-time updates and local storage.",
+      technologies: ["HTML", "Tailwindcss", "JavaScript", "React.js"],
+      link: "https://to-do-list-nine-teal.vercel.app/",
+      gradient: "from-primary-500 to-accent-500",
+    },
+    {
+      title: "E-Commerce Store (Own API)",
+      description:
+        "Created a fully functional e-commerce store with Laravel backend API.",
+      technologies: ["HTML", "Tailwindcss", "JavaScript", "React.js", "Laravel", "MySQL"],
+      link: "https://e-commerceshop-three.vercel.app/",
+      gradient: "from-accent-500 to-primary-500",
+    },
+    {
+      title: "Restaurant Website",
+      description:
+        "Created a responsive restaurant website with menu display and booking system.",
+      technologies: ["HTML", "CSS", "JavaScript", "Vue.js"],
+      link: "https://friends-meets.vercel.app/",
+      gradient: "from-primary-500 to-accent-500",
+    },
+  ];
+
   return (
-    <section
-      id="project"
-      className="min-h-screen items-center justify-center py-20 "
-    >
+    <section id="project" className="relative py-20 lg:py-32">
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-950 via-dark-900/50 to-dark-950" />
+
       <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyen-400 bg-clip-text text-transparent text-center">
-            My Project
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">E-Commerce Website</h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Implemented product listing, shopping cart, and checkout system.
-              </p>
-              <div className="text-wrap">
-                {["HTML", "CSS", "JavaScript", "React.js"].map((index, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                  >
-                    {index}
-                  </span>
-                ))}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://e-commerceshop-fakestoreapi.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">
-                Point Of Sale (Mini-restaurant)
-              </h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Designed ordering, product list and billing features for a
-                mini-restaurant.{" "}
-              </p>
-              <div className="text-wrap">
-                {["HTML", "CSS", "JavaScript", "PHP", "MySQL"].map(
-                  (index, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                    >
-                      {index}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="section-title">My Projects</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="group glass-card overflow-hidden hover:-translate-y-2 transition-all duration-500"
+              >
+                {/* <div className="relative h-48 overflow-hidden">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                      <svg className="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+
+                    </div>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="px-3 py-1 text-xs font-medium text-primary-400 bg-primary-500/10 border border-primary-500/20 rounded-full">
+                      {project.technologies[0]}
                     </span>
-                  )
-                )}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://github.com/MrrMiroTa/system_restaurant"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">News Website</h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Developed a news website with real-time updates and fetch API
-                integration(BBC).
-              </p>
-              <div className="text-wrap "> 
-                {["HTML", "CSS", "Tailwindcss", "JavaScript", "React.js"].map(
-                  (index, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
+                  </div>
+                </div> */}
+
+                <div className="p-6 space-y-4">
+                  <h3 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-dark-400 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span key={tech} className="skill-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="pt-4 border-t border-white/5">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors group/link"
                     >
-                      {index}
-                    </span>
-                  )
-                )}
-                ;
+                      View Project
+                      <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://news-by-uzita.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">Calculator App</h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Developed a calculator app with real-time updates .
-              </p>
-              <div className="text-wrap ">
-                {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
-                  (index, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                    >
-                      {index}
-                    </span>
-                  )
-                )}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://calculator-app-uzita.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">To Do List</h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Developed a to do list app with real-time updates.
-              </p>
-              <div className="text-wrap ">
-                {["HTML", "Tailwindcss", "JavaScript", "React.js"].map(
-                  (index, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                    >
-                      {index}
-                    </span>
-                  )
-                )}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://to-do-list-nine-teal.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">
-                E-Commerce Store (Own API)
-              </h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Developed a full-fledged e-commerce store with a custom API.
-              </p>
-              <div className="sm:text-wrap ">
-                {[
-                  "HTML",
-                  "Tailwindcss",
-                  "JavaScript",
-                  "React.js",
-                  "Laravel",
-                  "MySQL",
-                ].map((index, key) => (
-                  <span
-                    key={key}
-                    className=" flex text-wrap xl:grid sm:grid-cols-6 bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                  >
-                    {index}
-                  </span>
-                ))}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://e-commerceshop-three.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-              <h3 className="text-xl ffont-bold mb-2">
-                Restaurant Website
-              </h3>
-              <p className="text-gray-400 mb-4 break-words">
-                Created a responsive restaurant website with menu and booking.
-              </p>
-              <div className="sm:text-wrap ">
-                {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "Vue.js",
-                ].map((index, key) => (
-                  <span
-                    key={key}
-                    className=" flex text-wrap xl:grid sm:grid-cols-6 bg-blue-500/10 cursor-pointer text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                        hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                  >
-                    {index}
-                  </span>
-                ))}
-                ;
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://friends-meets.vercel.app/"
-                  target="_blank"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View project →
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </RevealOnScroll>
