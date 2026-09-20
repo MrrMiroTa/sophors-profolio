@@ -63,9 +63,17 @@ function Project() {
       description:
         "Created a responsive daily payment tracker for not your payment",
       technologies: ["HTML", "CSS", "JavaScript", "PHP","MySQL"],
-      link: "https://dailypayment.gamer.gd/?i=1",
+      link: "https://tracker-money.wasmer.app/",
       gradient: "from-primary-500 to-accent-500",
     },
+     {
+      title: "Weather App",
+      description:
+        "A modern, dark-themed weather application built with React and Vite. It fetches real-time weather data, 5-day forecasts, and hourly forecasts from OpenWeatherMap, with a focus on Cambodian cities and global locations.",
+      technologies: ["React Js"],
+      link: "https://tracker-money.wasmer.app/",
+      gradient: "from-primary-500 to-accent-500",
+    }
   ];
 
   return (
