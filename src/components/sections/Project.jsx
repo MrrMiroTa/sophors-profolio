@@ -53,7 +53,7 @@ function Project() {
     {
       title: "Restaurant Website",
       description:
-        "Created a responsive restaurant website with menu display and booking system.",
+        "Created a responsive restaurant website with menu display and booking system and order alert to Telegram App.",
       technologies: ["HTML", "CSS", "JavaScript", "Vue.js"],
       link: "https://friends-meets.vercel.app/",
       gradient: "from-primary-500 to-accent-500",
